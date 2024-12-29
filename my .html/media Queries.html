@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            background-color: chartreuse;
+            padding: 1rem;
+        }
+        .box:nth-of-type(2){
+            background-color: dodgerblue;
+        }
+        #text{
+            height: 200px;
+            width: 40px;
+            color: rgb(15, 15, 14);
+            border-radius: 20px;
+            text-align: center;
+            background-color: lightgray;
+        }
+        @media screen and (min-width:600px) {
+            .container{
+                flex-direction: row;
+            }
+            .box{
+                background-color: gold;
+            }
+        }
+        @media print {
+            body {
+                font-size: 12pt;
+            }
+            .box{
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Inventore ipsa sequi
+                 alias aliquam quod vero, fuga dolorem 
+                 aperiam ratione eaque rem architecto 
+                 corrupti ipsum. Fugiat est dignissimos
+                  quas voluptatem fuga.</p>
+        </div>
+        <div class="box">
+            Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Voluptate, repellat 
+            nostrum aspernatur voluptatem asperiores 
+            labore suscipit voluptates ullam, possimus
+             natus fugit modi quos mollitia, n
+             umquam odit. Ratione voluptates 
+             maxime nulla.
+             
+        </div>
+        <textarea name="ew" id="text"></textarea>
+    </div>
+</body>
+</html>

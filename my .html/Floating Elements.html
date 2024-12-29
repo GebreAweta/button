@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating</title>
+    <style>
+        body{
+            margin: 10px;
+        }
+        .avatar{
+            border-radius: 5px;
+            width: 5rem;
+            height: 5rem;
+            background-color: gold;
+            float: left;
+            margin: 10px;
+            
+        }
+        .clearfix::after{
+            content:'' ;
+            display: block;
+            clear: both;
+        }
+        
+        .tweet{
+            border: 3px solid lightgreen;
+            margin: 10px;
+            border-radius: 10px;
+            overflow:auto;
+        }
+    </style>
+</head>
+<body>
+    <article class="tweet clearfix">
+        <div class="avatar"></div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nostrum facere alias 
+            laboriosam magnam excepturi cumque 
+            natus recusandae iure consequatur 
+            animi ad cupiditate, omnis sit ob
+            caecati veniam dolorem perferendis 
+            distinctio libero esse! Ducimus 
+            blanditiis illum, aut impedit, d
+            icta praesentium eius voluptatibus 
+            eum aperiam obcaecati saepe doloribus i
+            ncidunt. 
+           Animi nam dicta dolores!</p>
+        <div class="clear"></div>
+    </article>
+</body>
+</html>

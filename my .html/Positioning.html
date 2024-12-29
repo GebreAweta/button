@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        body{
+            height: 200vh;
+            margin: 10px;
+        }
+        .boxes{
+            border: solid lightcoral;
+            position: relative;
+        }
+        .box{
+            width: 5rem;
+            height: 5rem;
+        }
+        .box-one{
+            background-color: gold;
+        
+        }
+        .box-two{
+            background-color: rgb(0, 255, 64);
+            position:fixed ;
+            left: 2rem;
+            right: 2rem;
+            top: 0;
+            width: auto;
+            z-index: 999999;
+        }
+        .box-three{
+            background-color: darkorange;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box box-one"></div>
+        <div class="box box-two"></div>
+        <div class="box box-three"></div>
+    </div>
+</body>
+</html>
